@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Product Registration</title>
+<link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+	<div class="container">
+		<form id="register" action="Register" method="post">
+			<h3>Product Registration</h3>
+
+			<fieldset>
+				<input placeholder="Barcode" type="text" name="barcode" tabindex="1" required autofocus pattern="[0-9]+">
+			</fieldset>
+			<fieldset>
+				<input placeholder="Product Name" type="text" name="name" tabindex="2" required>
+			</fieldset>
+			<fieldset>
+				<input placeholder="Product Color" type="text" name="color" tabindex="3" required>
+			</fieldset>
+			<fieldset>
+				<textarea placeholder="Product description" name="desc" tabindex="4" required></textarea>
+			</fieldset>
+			<fieldset>
+				<button name="submit" type="submit" id="register-submit"
+					data-submit="...Sending">Submit</button>
+			</fieldset>
+			
+		</form>
+	</div>
+</body>
+
+</html>
